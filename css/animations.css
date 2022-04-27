@@ -1,0 +1,21 @@
+.amtColor {
+    animation: ChangeColor 30s ease-in-out infinite;
+}
+
+@keyframes ChangeColor {
+    0% {
+        color: #e6fb04;
+    }
+    25% {
+        color: #00ff66;
+    }
+    50% {
+        color: #ff00ff;
+    }
+    75% {
+        color: #6e0dd0;
+    }
+    100% {
+        color: #ff3300;
+    }
+}

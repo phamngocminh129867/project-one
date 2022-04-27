@@ -1,0 +1,165 @@
+/* ------------- Custom scroll ------------------ */
+
+body {
+    background-color: #000;
+}
+
+html::-webkit-scrollbar {
+    width: 12px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-image: linear-gradient( 180deg, #edb3ed, hsl(60 100% 50%));
+}
+
+*/ html::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
+/* ----------------------   Custom header        ------------------------*/
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+header {
+    width: 1350px;
+    height: 150px;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__bottom {
+    min-width: 700px;
+    height: 80px;
+    width: 1200px;
+    background-color: #6A5AF9;
+    border-radius: 0px 100rem 0px 0px;
+}
+
+.header__bottom--menu .header__bottom--list {
+    line-height: 80px;
+    position: relative;
+    margin: 0 15px;
+    font-weight: 600;
+    display: inline-block;
+    transform: translateY(-100%);
+}
+
+
+/* fix cho này thêm cái class vào trong cái thẻ a chứ cái list 
+    bắt đầu từ dòng 35 source src-php.html
+*/
+
+.header__bottom--list .header__bottom--list-link {
+    transform: translateY(-20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__bottom--menu .header__bottom--list i {
+    color: #fff;
+    transform: translateY(500%);
+    z-index: 99;
+    margin-left: 0;
+}
+
+.right {
+    width: 70px;
+    height: 150px;
+    transform: translateX(-40%);
+}
+
+.header__bottom--logo .header__bottom--logo-img {
+    height: 100px;
+    transform: translateX(50%);
+}
+
+.form-input {
+    padding: 0 20px;
+    border-radius: 5px;
+    border: 1px solid;
+    width: 100%;
+    height: 40px;
+    transform: translateX(12%);
+}
+
+.form-field {
+    position: relative;
+    transform: translateY(50%);
+    margin-bottom: 15px;
+}
+
+
+/* ------------------ custom footer and icon massage  ----------------- */
+
+.footer {
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.footer__messenger-link {
+    position: fixed;
+    right: 0;
+    bottom: -8px;
+    margin-right: 5px;
+    color: #fff;
+    background-color: green;
+    line-height: 50px;
+    padding: 10px 10px;
+    border-radius: 40%;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer__messenger {
+    right: 0;
+}
+
+.footer__messenger-item {
+    margin: 0 4px;
+    font-size: 3rem;
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    background-color: #00FF00;
+    border-radius: 4px;
+}
+
+.footer__contain-list {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.footer__contain-link {
+    text-decoration: none;
+    color: #666699;
+    line-height: 5px;
+    margin-right: 5px;
+}
+
+.footer__contain-icon {
+    margin-right: 4px;
+}
+
+
+/*custom background shop */
+
+marqee>p>a {
+    transform: translateY(-50%);
+}

@@ -9,181 +9,97 @@
     <link rel="stylesheet" href="./css/index.css">
     <!-- link sticky slider -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="/js/header-footer.js">
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Link React -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <title>Website-Share-code</title>
 </head>
-<style>    /* ------------- Custom scroll ------------------ */
-    
-    html::-webkit-scrollbar {
-        width: 12px;
-    }
-    
-    html::-webkit-scrollbar-thumb {
-        background-image: linear-gradient( 180deg, #edb3ed, hsl(60 100% 50%));
-    }
-    
-    */ html::-webkit-scrollbar-track {
-        background-color: transparent;
-    }
-    /* ------------- Custom sticky-slider ------------------ */
-    
-    .image_slider {
-        padding: 10px;
-    }
-    
-    .image {
-        height: 500px;
-        margin-bottom: 20px;
-        /* width: 300px; */
-        object-fit: cover;
-    }
-    
-    .image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 12px;
-    }
-    
-    .slick-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        border: none;
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 20px;
-        line-height: 1;
-        z-index: 2px;
-        transition: all 0.25s ease;
-        background-color: transparent;
-        color: #e5f718ea;
-    }
-    
-    .slick-prev {
-        z-index: 12;
-    }
-    
-    .slick-arrow:hover {
-        color: white;
-        transform: scale(2);
-    }
-    
-    .slick-prev {
-        left: 0;
-    }
-    
-    .slick-next {
-        right: 0;
-    }
-    
-    .slick-dots {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%);
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        gap: 0 20px;
-        margin: auto;
-        list-style-type: none;
-    }
-    
-    .slick-dots button {
-        font-size: 0;
-        width: 15px;
-        height: 15px;
-        border-radius: 100rem;
-        background-color: #eee;
-        border: none;
-        outline: none;
-        transition: all 0.2 ease;
-    }
-    
-    .slick-dots .slick-active button {
-        background-color: #bad137;
-    }
-    /* Custom Grid-Item */
-    
-    .layout {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 350px 100px 350px;
-        grid-gap: 30px;
-        padding: 30px;
-        grid-template-areas: "h1 h1 h3 h4" "h2 h5 h3 h4" "h2 h5 h6 h6";
-    }
-    
-    .layout-item--image {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .layout-item {
-        overflow: hidden;
-        border-radius: 10px;
-    }
-    
-    .layout-item:first-child {
-        grid-area: h1;
-    }
-    
-    .layout-item:nth-child(2) {
-        grid-area: h2;
-    }
-    
-    .layout-item:nth-child(3) {
-        grid-area: h3;
-    }
-    
-    .layout-item:nth-child(4) {
-        grid-area: h4;
-    }
-    
-    .layout-item:nth-child(5) {
-        grid-area: h5;
-    }
-    
-    .layout-item:last-child {
-        grid-area: h6;
-    }</style>
+
 <body>
-    <header></header>
+    <header id="header">
+        <div class="left ">
+            <!-- header top -->
+            <div class="header__top">
+                <h3 style="color: red;" class="header__top--title">
+                    Team Share Code Số 2 Việt Nam
+                </h3>
+            </div>
+            <!-- header bottom -->
+            <div class="header__bottom mt-16">
+                <ul class="header__bottom--menu">
+                    <li class="header__bottom--list">
+                        <a style="color: red;text-decoration: none;" href="index.html"> Home</a>
+                    </li>
+                    <li class="header__bottom--list">
+                        <a style="color: white;text-decoration: none;" href="/html/src-php.html"> PHP</a>
+                    </li>
+                    <li class="header__bottom--list">
+                        <a style="color: white;text-decoration: none;" href="#"> Java</a>
+                    </li>
+                    <li class="header__bottom--list">
+                        <a style="color: white;text-decoration: none;" href="#"> Javascript</a>
+                    </li>
+                    <li class="header__bottom--list">
+                        <a style="color: white;text-decoration: none;" href="#"> C++</a>
+                    </li>
+                    <li class="header__bottom--list">
+                        <a style="color: white;text-decoration: none;" href="#"> Code - Website</a>
+                    </li>
+                    <li class="header__bottom--list">
+                        <div class="form-field">
+                            <i class="fa-solid fa-magnifying-glass"></i>&emsp;
+                            <input type="text" class="form-input" placeholder="Name">
+                            </input>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header__bottom--logo">
+                <img style="width: 200px;height: 200px;" src="/img/a.gif" alt="Demo-logo" class="header__botton--logo-img">
+            </div>
+            <div class="header__bottom--triangel">
+            </div>
+        </div>
+    </header>
     <!-- custom slider ticky -->
     <div class="image_slider">
         <div class="image_slider-item">
             <div class="image">
-                <img src="./img/a.jpg" alt="pic-one">
+                <img src="img/a.jpg" alt="pic-one">
             </div>
         </div>
         <div class="image_slider-item">
             <div class="image">
-                <img src="./img/f.jpg" alt="pic-one">
+                <img src="img/f.jpg" alt="pic-one">
             </div>
         </div>
         <div class="image_slider-item">
             <div class="image">
-                <img src="./img/c.jpg" alt="pic-one">
+                <img src="img/c.jpg" alt="pic-one">
             </div>
         </div>
         <div class="image_slider-item">
             <div class="image">
-                <img src="./img/b.jpg" alt="pic-one">
+                <img src="img/b.jpg" alt="pic-one">
             </div>
         </div>
         <div class="image_slider-item">
             <div class="image">
-                <img src="./img/d.jpg" alt="pic-one">
+                <img src="img/d.jpg" alt="pic-one">
             </div>
         </div>
         <div class="image_slider-item">
             <div class="image">
-                <img src="./img/e.jpg" alt="pic-one">
+                <img src="img/e.jpg" alt="pic-one">
             </div>
         </div>
     </div>
@@ -195,7 +111,7 @@
     <hr>
     <marquee behavior="scroll" direction="left">
         <p style="font-weight: bold;color: yellowgreen;">
-            WelCome To My Website Gì vậy Fen ơi
+            WelCome To My Website Gì vậy Fen ơi !!
         </p>
     </marquee>
     <hr>
@@ -208,22 +124,55 @@
         <div class="layout-item"><img src="img/a4.jpg" alt="picture" class="layout-item--image"></div>
         <div class="layout-item"><img src="img/q1.jpg" alt="picture" class="layout-item--image"></div>
     </div>
+    <!-- Custom comment block -->
+    <div class="block glow">
+        <div class="comment_live">
+            <div class="comment_block">
+                <div class="avatar"><img src="/img/av3.jpg" alt="Phong 20cm"></div>
+                <div class="name">Gánh Cả Bầu Trời</div>
+                <div class="content-comment">"Rượi ngon uốn mãi chẳng say !<br> Người cười một cái ta say cả đời"</div>
+            </div>
+            <div class="comment_block">
+                <div class="avatar"><img src="/img/av1.jpg" alt="Đương pro"></div>
+                <div class="name">Chuyên Gia Đọc Lệnh</div>
+                <div class="content-comment">"Chẳng có việc gì khó !<br> Chỉ sợ lòng không bền !<br> Đào núi và lấp biển !<br> Quyết chí ắc làm nên"</div>
+            </div>
+            <div class="comment_block">
+                <div class="avatar"><img src="/img/av2.png" alt="Phương Sadboy"></div>
+                <div class="name">Hoàng Tử SadBoy</div>
+                <div class="content-comment">"Một bàn tay dù to thế nào cũng không thể giữ một bàn tay đã không muốn nắm. Một vòng tay dù có rộng bao nhiêu cũng chẳng thể ôm trọn một người đã muốn rời đi."</div>
+            </div>
+        </div>
+    </div>
+    <!-- Custom css logo massage -->
+    <div class="footer__messenger">
+        <div class="footer__messenger-item">
+            <a href="" class="footer__messenger-link">
+                <i class="fa-brands fa-facebook-messenger footer__messenger-icon"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Custom footer -->
+    <div class="footer">
+        <div class="contain">
+            <ul class="footer__contain-list">
+                <li class="footer__contain-item"><a href="" class="footer__contain-link">Tư vấn:&nbsp&nbsp
+                        <i class="fa-solid fa-headphones footer__contain-icon"></i>0945 518 538
+                    </a></li>
+            </ul>
+            <ul class="footer__contain-list">
+                <li class="footer__contain-item"><a href="" class="footer__contain-link">Liên hệ:&nbsp&nbsp
+                        <i class="fa-solid fa-phone footer__contain-icon"></i>0906 308 280
+                    </a></li>
+            </ul>
+            <ul class="footer__contain-list">
+                <li class="footer__contain-item"><a href="" class="footer__contain-link">Email: &nbsp&nbsp
+                        <i class="fa-solid fa-envelope footer__contain-icon"></i> phamngocminhchemical@gmail.com
+                    </a></li>
+            </ul>
+        </div>
+    </div>
 </body>
-<script src="./js/index.js">
-    $('.image_slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    infinite: true,
-    autoplaySpeed: 2000,
-    arrows: true,
-    dots: true,
-    speed: 300,
-    draggable: false,
-    prevArrow: `<button type='button' class='slick-prev slick-arrow '><ion-icon name="arrow-back-outline">
-    </ion-icon></button>`,
-    nextArrow: `<button type='button' class='slick-next slick-arrow '><ion-icon name="arrow-forward-outline"></ion-icon></button>`,
-});
-    </script>
+<script src="/js/index.js"></script>
 
 </html>

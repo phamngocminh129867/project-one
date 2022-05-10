@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Danh mục sản phẩm</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: black;
+        outline: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    header {
+        height: 100px;
+        width: 100vw;
+        text-align: center;
+        border-bottom: 2px solid #ddd;
+    }
+    
+    .admin-content {
+        padding-top: 50px;
+        display: flex;
+    }
+    
+    .admin-content-left {
+        background-color: #dddd;
+        width: 20%;
+        height: 100vh;
+        padding: 30px 0 0 12px;
+    }
+    
+    .admin-content-left>ul>li>a {
+        font-weight: bold;
+    }
+    
+    .admin-content-left ul li {
+        margin: 6px 0;
+    }
+    
+    .admin-content-left ul ul {
+        margin-left: 20px;
+    }
+    
+    .admin-content-right {
+        width: 80%;
+        padding: 30px 0 0 12px;
+    }
+    
+    .admin-content-right-cartegory_add input {
+        height: 30px;
+        width: 200px;
+        padding-left: 12px;
+        margin-top: 20px;
+    }
+    
+    .admin-content-right-cartegory_add button {
+        display: block;
+        margin-top: 10px;
+        height: 30px;
+        width: 100px;
+        cursor: pointer;
+        background-color: brown;
+        border: none;
+        color: white;
+    }
+    
+    .admin-content-right-cartegory_add button:hover {
+        background-color: transparent;
+        border: 1px solid brown;
+        color: black;
+    }
+    /*-------------------------------------cartegory list----------------------------*/
+    
+    .admin-content-right-cartegory_list table {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .admin-content-right-cartegory_list table tr th,
+    td {
+        border: 1px solid #dddddd;
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Top</h1>
+    </header>
+    <section class="admin-content">
+        <div class="admin-content-left">
+            <ul>
+                <li><a href="">Danh mục</a>
+                    <ul>
+                        <li><a href="">thêm danh mục</a></li>
+                        <li><a href="">Danh sách danh mục</a></li>
+                    </ul>
+                </li>
+                <li><a href="">loại sản phẩm</a>
+                    <ul>
+                        <li><a href="">thêm loại sản phẩm</a></li>
+                        <li><a href="">Danh sách loại sản phẩm</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Sản phẩm</a>
+                    <ul>
+                        <li><a href="">thêm Sản phẩm</a></li>
+                        <li><a href="">Danh sách Sản phẩm</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="admin-content-right">
+            <div class="admin-content-right-cartegory_list">
+                <h1>Danh sách danh mục</h1>
+                <table>
+                    <tr>
+                        <th>
+                            Stt
+                        </th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Tuỳ Biến</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Sinh tố</td>
+                        <td><a href="">Fix</a>|<a href="">Delete</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
